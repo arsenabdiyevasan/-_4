@@ -376,14 +376,9 @@ inputT.addEventListener('input' , e =>{
     const fell=data.filter(({race}) => race.toUpperCase().includes(search));
     showCard(fell)
 
-    const felll=data.filter(({gender}) => gender.toUpperCase().includes(search));
-    showCard(felll)
+
     inputN.value=''
 })
 
-window.addEventListener('load',showCard(data))
-const btn=document.querySelector('abtn');
-btn.onnclick=(e)=>{
-    e.preventDefault();
-}
+
 
